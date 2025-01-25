@@ -7,6 +7,19 @@
 #define REQUIRED_KEYS 7
 #define MAX_KEYS 8
 
+/*
+@param key{
+  int byr;  // birth year
+  char ecl[5];  // Eye color
+  int iyr;  // issue year
+  int eyr;  // Expiration year
+  char hgt[10]; // height
+  char hcl[10]; // hair color
+  long int pid; // passport ID
+  int cid;  // country ID
+};
+*/
+
 int count_required_keys(char *line) {
   int required_key = 0;
   char *key = strtok(line, " ");
